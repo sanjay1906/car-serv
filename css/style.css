@@ -1,0 +1,71 @@
+.main-serivces {
+    height: 55rem;
+}
+
+.service-section {
+    height: 90vh;
+    background-image: url(../images/bg2.png);
+    background-size: cover;
+}
+
+.our-service {
+    color: white;
+    font-weight: 500;
+    font-size: 2.8vh;
+    padding-top: 3rem;
+}
+
+.service-slogan {
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-slogan h4 {
+    max-width: 40%;
+}
+
+.title-paragraph {
+    font-weight: 500;
+    color: #d8dadc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-paragraph p {
+    max-width: 60%;
+}
+
+.card-section {
+    margin-top: 10vh;
+    max-width: 175vh;
+}
+
+.card-shadow {
+    box-shadow: none;
+}
+
+.card-service {
+    background: #f6f7f8;
+    margin-top: -2vh;
+}
+
+.card-service h5 {
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.card-service p {
+    color: #4f6472;
+    font-weight: 500;
+}
+
+.servise-btn {
+    margin-top: 3vh;
+    border-radius: none;
+    font-weight: 500;
+    background: #d6110b;
+}
