@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+  <link rel="stylesheet" href="./css/demo.css">
+
+  <title>Demo</title>
+</head>
+
+<body class="grey lighten-4">
+  <!-- navbar -->
+
+  <nav class="purple darken-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Quoradmin</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large right"><i
+            class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="sanju.html">Dashboard</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="comments.html">Comments</a></li>
+          <li><a href="users.html">Users</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- side bar -->
+
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="./images/bg.jpg" class="responsive-img" />
+        </div>
+        <a href="#user"><img class="circle" src="./images/sanju.jpg" /></a>
+        <a href="#name"><span class="white-text name">Sanjay Thakur</span></a>
+        <a href="#email"><span class="white-text email">venom@gmail.com</span></a>
+      </div>
+    </li>
+    <li class="active">
+      <a href="sanju.html"><i class="material-icons">dashboard</i>Dashboard</a>
+    </li>
+    <li>
+      <a href="posts.html"><i class="material-icons">pages</i>Posts</a>
+    </li>
+    <li>
+      <a href="categories.html"><i class="material-icons">people</i>Categories</a>
+    </li>
+    <li>
+      <a href="comments.html"><i class="material-icons">question_answer</i>Comments</a>
+    </li>
+    <li>
+      <a href="users.html"><i class="material-icons">person_pin</i>Users</a>
+    </li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Account Controls</a></li>
+    <li><a class="waves-effect" href="./login.html">Logout</a></li>
+  </ul>
+
+  <!-- end side-bar -->
+
+  <!-- end navbar -->
+
+  <!-- card section -->
+
+  <section class="section section-stats center">
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card-panel purple lighten-1 white-text center">
+          <i class="material-icons medium">insert_emoticon</i>
+          <h5>Monthly Visitors</h5>
+          <h3 class="count">20300</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate white" style="width: 40%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel lighten-1 purple-text center">
+          <i class="material-icons medium">mode_edit</i>
+          <h5>Blog Posts</h5>
+          <h3 class="count">105</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate purple lighten-1" style="width: 20%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel purple lighten-1 white-text center">
+          <i class="material-icons medium">mode_comment</i>
+          <h5>Comments</h5>
+          <h3 class="count">1200</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate white" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel lighten-1 purple-text center">
+          <i class="material-icons medium">insert_emoticon</i>
+          <h5>Users</h5>
+          <h3 class="count">350</h3>
+          <div class="progress grey lighten-1">
+            <div class="determinate purple lighten-1" style="width: 10%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- chart section -->
+  <section class="section section-visitors purple lighten-4">
+    <div class="row">
+      <div class="col s12 m6 l8">
+        <div class="card-panel">
+          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <ul class="collection with-header letest-comments">
+          <li class="collection-header">
+            <h5>Letest Comments</h5>
+          </li>
+          <li class="collection-item avatar">
+            <img src="./images/12.jpg" alt="" class="circle">
+            <span class="title">Eni Shea</span>
+            <p class="truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur harum debitis impedit,
+              quisquam modi praesentium nisi illo recusandae minima vero vel blanditiis, doloribus facere ullam nobis
+              tempore. Consequatur, officia esse.</p>
+            <a href="#" onclick="M.toast({html: 'Comment Approved'})" class="green-text">Approve</a> |
+            <a href="#" onclick="M.toast({html: 'Comment Denied',classes: 'rounded'})" class="deny red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="./images/sa.jpg" alt="" class="circle">
+            <span class="title">mony takkar</span>
+            <p class="truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur harum debitis impedit,
+              quisquam modi praesentium nisi illo recusandae minima vero vel blanditiis, doloribus facere ullam nobis
+              tempore. Consequatur, officia esse.</p>
+            <a href="#" onclick="M.toast({html: 'Comment Approved'})" class="green-text">Approve</a> |
+            <a href="#" onclick="M.toast({html: 'Comment Denied',classes: 'rounded'})" class="deny red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="./images/user_1.jpg" alt="" class="circle">
+            <span class="title">lara shetty</span>
+            <p class="truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur harum debitis impedit,
+              quisquam modi praesentium nisi illo recusandae minima vero vel blanditiis, doloribus facere ullam nobis
+              tempore. Consequatur, officia esse.</p>
+            <a href="#" onclick="M.toast({html: 'Comment Approved'})" class="green-text">Approve</a> |
+            <a href="#" onclick="M.toast({html: 'Comment Denied', classes: 'rounded'})" class="deny red-text">Deny</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- section: recent posts and todos  -->
+  <section class="section section-recent">
+    <div class="row">
+      <div class="col s12 m6 l8">
+        <div class="card">
+          <div class="cord-content">
+            <span class="card-title">Recent Posts</span>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Categoty</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Post One</td>
+                  <td>Web Development</td>
+                  <td> <a href="details.html" class="btn purple lightten-2">Details</a> </td>
+                </tr>
+                <tr>
+                  <td>Post Two</td>
+                  <td>Graphic Design</td>
+                  <td> <a href="details.html" class="btn purple lightten-2">Details</a> </td>
+                </tr>
+                <tr>
+                  <td>Post Three</td>
+                  <td>Web Development</td>
+                  <td> <a href="details.html" class="btn purple lightten-2">Details</a> </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Quick Todos</span>
+            <form id="todo-form">
+              <div class="input-field">
+                <input type="text" placeholder="Add Todo..." id="todo">
+              </div>
+            </form>
+            <ul class="collection todos">
+              <li class="collection-item">
+                <div>Todo One <a href="#" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a> </div>
+              </li>
+              <li class="collection-item">
+                <div>Todo Two<a href="#" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="section purple darken-2 white-text center">
+    <p>Quoradmin Panel copyright &copy; 2019</p>
+  </footer>
+
+  <!-- action button -->
+
+  <div class="fixed-action-btn section">
+    <a class="btn-floating btn-large green darken-1">
+      <i class="large material-icons">add</i>
+    </a>
+    <ul>
+      <li><a href="#post-modal" class="modal-trigger btn-floating purple"><i class="material-icons">mode_edit</i></a>
+      </li>
+      <li><a href="#category-modal" class="modal-trigger btn-floating purple"><i class="material-icons">folder</i></a>
+      </li>
+      <li><a href="#user-modal" class="modal-trigger btn-floating purple"><i
+            class="material-icons">supervisor_account</i></a></li>
+    </ul>
+  </div>
+
+  <!-- add post modal -->
+  <div id="post-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add posts</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="title">
+          <label for="title">Title</label>
+        </div>
+        <div class="input-field">
+          <select>
+            <option value="" disabled selected>Select option</option>
+            <option value="1">Web Development</option>
+            <option value="2">Graphic Design</option>
+            <option value="3">Tech Gadgets</option>
+            <option value="4">Other</option>
+          </select>
+          <label>Category</label>
+        </div>
+        <div class="input-field">
+          <textarea name="body" id="body" class="materialize-textarea"></textarea>
+          <label for="body">body</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#" class="modal-action modal-close btn purple white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- add category modal -->
+  <div id="category-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add Category</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="title">
+          <label for="title">Title</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#" class="modal-action modal-close btn purple white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- add user modal -->
+  <div id="user-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add User</h4>
+      <form>
+        <div class="input-field">
+          <input type="text" id="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password2">
+          <label for="password2">Confirm Password</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="#" class="modal-action modal-close btn purple white-text">Submit</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-purple-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/sanju.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+
+  <script>
+    //  hide section
+    $('.section').hide();
+
+    setTimeout(function () {
+      $(document).ready(function () {
+        // action button
+        $('.fixed-action-btn').floatingActionButton();
+
+        // show sections
+        $('.section').fadeIn();
+
+        // hide preloader
+        $('.loader').fadeOut();
+
+        //init side nav
+        $(".sidenav").sidenav();
+
+        //init modal
+        $('.modal').modal();
+
+        //init select
+        $('select').formSelect();
+
+        // textarea body
+        CKEDITOR.replace('body');
+
+        // counter
+        $(".count").each(function () {
+          $(this).prop("Counter", 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 1000,
+            easing: "swing",
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          });
+        });
+        // Quick todos
+        $('#todo-form').submit(function (e) {
+          const output = `<li class="collection-item">
+                <div>${$('#todo').val()} <a href="#" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a> </div>
+              </li>`;
+          $('.todos').append(output);
+          M.toast({
+            html: 'Todo Added',
+            classes: 'rounded',
+          });
+          e.preventDefault();
+        });
+
+        // delete todos
+        $('.todos').on('click', '.delete', function (e) {
+          $(this).parent().parent().remove();
+          M.toast({
+            html: 'Todo Removed',
+            classes: 'rounded',
+          });
+          e.preventDefault();
+        });
+      });
+    }, 1000);
+  </script>
+</body>
+
+</html>

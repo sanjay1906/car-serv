@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <link rel="stylesheet" href="./css/demo.css">
+
+    <title>Demo</title>
+</head>
+
+<body class="grey lighten-4">
+
+    <!-- navbar -->
+    <nav class="purple darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="sanju.html" class="brand-logo">Quoradmin</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <!-- login -->
+    <section class="section section-login">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8  offset-m2 l6 offset-l3">
+                    <div class="card-panel login  purple darken-2 white-text center">
+                        <h4>Quoradmin Login</h4>
+                        <form action="./sanju.html">
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input type="email" id="email">
+                                <label class="white-text" for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">lock</i>
+                                <input type="password" id="password">
+                                <label class="white-text" for="password">Password</label>
+                            </div>
+                            <input type="submit" value="login"
+                                class="btn btn-large btn-extended grey lighten-4 black-text">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="section purple darken-2 white-text center">
+        <p>Quoradmin Panel copyright &copy; 2019</p>
+    </footer>
+
+    <!-- preloader -->
+    <div class="loader preloader-wrapper big active">
+        <div class="spinner-layer spinner-purple-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        //  hide section
+        $('.section').hide();
+
+        setTimeout(function () {
+            $(document).ready(function () {
+                // action button
+                $('.fixed-action-btn').floatingActionButton();
+
+                // show sections
+                $('.section').fadeIn();
+
+                // hide preloader
+                $('.loader').fadeOut();
+
+            });
+        }, 1000);
+    </script>
+</body>
+
+</html>

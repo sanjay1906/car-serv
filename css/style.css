@@ -40,7 +40,7 @@
 }
 
 .card-section {
-    margin-top: 10vh;
+    margin-top: 6vh;
     max-width: 175vh;
 }
 
@@ -50,12 +50,13 @@
 
 .card-service {
     background: #f6f7f8;
-    margin-top: -2vh;
 }
 
 .card-service h5 {
     font-size: 3vh;
     font-weight: 500;
+    padding-bottom: 0.5rem;
+    margin-top: -0px;
 }
 
 .card-service p {
@@ -68,4 +69,32 @@
     border-radius: none;
     font-weight: 500;
     background: #d6110b;
+}
+
+.item {
+    height: auto;
+}
+
+.scrollCard {
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid #d6110b;
+    margin: 2px;
+    transition: none;
+}
+
+.scrollCard:hover {
+    background-color: #d6110b;
+
+}
+
+@media (max-width:1000px) {
+    .item {
+        height: auto;
+        width: auto;
+    }
+
+    .service-section {
+        max-height: 35rem;
+    }
 }

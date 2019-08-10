@@ -11,6 +11,10 @@
   <!-- icons link -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+  <!-- owl Carousel link -->
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" />
+
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Home</title>
@@ -40,67 +44,62 @@
 
 
       <!-- card in service section -->
-
-      <div class="row card-section">
-        <div class="col s12 m4">
-          <div class="card card-shadow">
-            <div class="card-image">
-              <img src="./images/img1.jpg" />
-            </div>
-            <div class="card-content card-service">
-              <h5>ELECTRICAL WORKS</h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered.
-              </p>
-              <button class="btn servise-btn">
-                READ MORE
-              </button>
-            </div>
+      <div class="owl-carousel container sliderWapper card-section">
+        <div class="card card-shadow item">
+          <div class="card-image">
+            <img src="./images/img1.jpg" />
+          </div>
+          <div class="card-content card-service">
+            <h5>ELECTRICAL WORKS</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered.
+            </p>
+            <button class="btn servise-btn">
+              READ MORE
+            </button>
           </div>
         </div>
-        <div class="col s12 m4">
-          <div class="card card-shadow">
-            <div class="card-image">
-              <img src="./images/img2.jpg" />
-            </div>
-            <div class="card-content card-service">
-              <h5>TIRES AND WHEELS</h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered.
-              </p>
-              <button class="btn servise-btn">
-                READ MORE
-              </button>
-            </div>
+        <div class="card card-shadow item">
+          <div class="card-image">
+            <img src="./images/img2.jpg" />
+          </div>
+          <div class="card-content card-service">
+            <h5>TIRES AND WHEELS</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered.
+            </p>
+            <button class="btn servise-btn">
+              READ MORE
+            </button>
           </div>
         </div>
-        <div class="col s12 m4">
-          <div class="card card-shadow">
-            <div class="card-image">
-              <img src="./images/img3.jpg" />
-            </div>
-            <div class="card-content card-service">
-              <h5>TECHNICAL REPAIRS</h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered.
-              </p>
-              <button class="btn servise-btn">
-                READ MORE
-              </button>
-            </div>
+        <div class="card card-shadow item">
+          <div class="card-image">
+            <img src="./images/img3.jpg" />
+          </div>
+          <div class="card-content card-service">
+            <h5>TECHNICAL REPAIRS</h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered.
+            </p>
+            <button class="btn servise-btn">
+              READ MORE
+            </button>
           </div>
         </div>
       </div>
 
+      <!-- pagination -->
 
-      <ul class="pagination center">
-        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-
-        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-      </ul>
+      <div class="row center">
+        <div class="waves-effect scrollCard prvBtn"><a href="#!"><i class="material-icons red-text">chevron_left</i></a>
+        </div>
+        <div class="waves-effect scrollCard nxtBtn"><a href="#!"><i
+              class="material-icons red-text">chevron_right</i></a></div>
+      </div>
 
       <!-- end card section -->
 
@@ -110,11 +109,18 @@
   <!-- end service section -->
 
 
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <!-- js link -->
   <script src="./js/home.js"></script>
+
+  <!-- owl carousel link -->
+
+  <script src="/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+  <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+
 </body>
 
 </html>
