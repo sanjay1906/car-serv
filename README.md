@@ -2,10 +2,10 @@
 
 ## Language Used :-
 
-materialize css laibtary
-html
-css
-js
+materialize css laibtary,
+html,
+css,
+js.
 
 ### Admin Page
 
